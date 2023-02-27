@@ -16,6 +16,10 @@
 		6DD90E9629ABDC54008926C5 /* NeuroBluetoothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD90E9529ABDC54008926C5 /* NeuroBluetoothTests.swift */; };
 		6DD90EA029ABDC54008926C5 /* NeuroBluetoothUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD90E9F29ABDC54008926C5 /* NeuroBluetoothUITests.swift */; };
 		6DD90EA229ABDC54008926C5 /* NeuroBluetoothUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD90EA129ABDC54008926C5 /* NeuroBluetoothUITestsLaunchTests.swift */; };
+		6DD90EB129ABDDD8008926C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DD90EB029ABDDD8008926C5 /* GoogleService-Info.plist */; };
+		6DD90EB429ABDE6D008926C5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6DD90EB329ABDE6D008926C5 /* FirebaseFirestore */; };
+		6DF63D6029AC0BBF00908ED5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6DF63D5F29AC0BBF00908ED5 /* FirebaseDatabase */; };
+		6DF63D6229AC0CFC00908ED5 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6DF63D6129AC0CFC00908ED5 /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,7 @@
 		6DD90E9B29ABDC54008926C5 /* NeuroBluetoothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeuroBluetoothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD90E9F29ABDC54008926C5 /* NeuroBluetoothUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroBluetoothUITests.swift; sourceTree = "<group>"; };
 		6DD90EA129ABDC54008926C5 /* NeuroBluetoothUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroBluetoothUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6DD90EB029ABDDD8008926C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DF63D6029AC0BBF00908ED5 /* FirebaseDatabase in Frameworks */,
+				6DD90EB429ABDE6D008926C5 /* FirebaseFirestore in Frameworks */,
+				6DF63D6229AC0CFC00908ED5 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +91,7 @@
 				6DD90E9429ABDC54008926C5 /* NeuroBluetoothTests */,
 				6DD90E9E29ABDC54008926C5 /* NeuroBluetoothUITests */,
 				6DD90E7C29ABDC53008926C5 /* Products */,
+				6DF63D5E29AC0BBF00908ED5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +108,7 @@
 		6DD90E7D29ABDC53008926C5 /* NeuroBluetooth */ = {
 			isa = PBXGroup;
 			children = (
+				6DD90EB029ABDDD8008926C5 /* GoogleService-Info.plist */,
 				6DD90E7E29ABDC53008926C5 /* AppDelegate.swift */,
 				6DD90E8029ABDC53008926C5 /* SceneDelegate.swift */,
 				6DD90E8229ABDC53008926C5 /* ViewController.swift */,
@@ -127,6 +137,13 @@
 			path = NeuroBluetoothUITests;
 			sourceTree = "<group>";
 		};
+		6DF63D5E29AC0BBF00908ED5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +160,11 @@
 			dependencies = (
 			);
 			name = NeuroBluetooth;
+			packageProductDependencies = (
+				6DD90EB329ABDE6D008926C5 /* FirebaseFirestore */,
+				6DF63D5F29AC0BBF00908ED5 /* FirebaseDatabase */,
+				6DF63D6129AC0CFC00908ED5 /* FirebaseFirestoreSwift */,
+			);
 			productName = NeuroBluetooth;
 			productReference = 6DD90E7B29ABDC53008926C5 /* NeuroBluetooth.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 6DD90E7229ABDC53008926C5;
+			packageReferences = (
+				6DD90EB229ABDE6D008926C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 6DD90E7C29ABDC53008926C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,6 +259,7 @@
 				6DD90E8B29ABDC54008926C5 /* LaunchScreen.storyboard in Resources */,
 				6DD90E8829ABDC54008926C5 /* Assets.xcassets in Resources */,
 				6DD90E8629ABDC53008926C5 /* Main.storyboard in Resources */,
+				6DD90EB129ABDDD8008926C5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +628,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6DD90EB229ABDE6D008926C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6DD90EB329ABDE6D008926C5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DD90EB229ABDE6D008926C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6DF63D5F29AC0BBF00908ED5 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DD90EB229ABDE6D008926C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		6DF63D6129AC0CFC00908ED5 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DD90EB229ABDE6D008926C5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6DD90E7329ABDC53008926C5 /* Project object */;
 }
